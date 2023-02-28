@@ -1,0 +1,85 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order Form</title>
+    <link href = "css/styles-2.css" rel="stylesheet"/>
+    <script src="js/datenow.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav> <a  href="home_page.html"><img id="navicon" src="images/nrlogo2.jpg" alt="N&R Bakery" /></a>
+         <ul>
+             <li class="navbar-item"><a href="home_page.html">Home</a></li>
+            <li class="navbar-item"><a href="cakes.html">Cakes</a></li>
+            <li class="navbar-item"><a href="Macarons.html">Macarons</a></li>
+            <li class="navbar-item"><a href="Misc_desserts.html">Other Desserts</a></li>
+            <li class="navbar-item"><a href="faqs.html">FAQ</a></li>
+            <li class="navbar-item"><a id="current"  href="order_form.html">Order Form</a></li>
+         </ul>
+      </nav>
+    </header>
+
+          <form id="order" action="htpp://www.example.com" method="post">
+         <fieldset id="custInfo">
+            <legend>Order Information</legend>
+
+            <div class="formRow">
+               <label for="name">Name*</label>
+               <input name="custName" id="name" type="text" placeholder="first and last name" required/>
+            </div>
+
+            <div class="formRow">
+               <label for="street">Street</label>
+               <input name="custStreet" id="street" type="text" placeholder="## and street"/>
+            </div>
+            <div class="formRow">
+               <label for="city">City</label>
+               <input name="custCity" id="city" type="text" placeholder="City"/>
+            </div>
+            <div class="formRow">
+               <label for="state">State</label>
+               <input name="custState" id="state" type="text" placeholder="State" />
+                </div>
+            <div>
+               <label>Do you want delivery straight to your door?</label>
+               <fieldset class="optGroup">
+                  <label for="cYes">Yes </label>
+                  <input name="oCorrect" id="cYes" value="yes" type="radio" />
+                  <label for="cNo"> No</label>
+                  <input name="oCorrect" id="cNo" value="no" type="radio" />
+               </fieldset>
+            </div>
+            <div class="formRow">
+
+            </div>
+
+            <label for="ordBox">Type your order here!</label>
+            <textarea name="custOrder" id="ordBox"></textarea>
+                <br/>
+               <label for="specBox">Any special requests?</label>
+            <textarea name="orderSpecify" id="specBox"></textarea>
+         </fieldset>
+
+         <div id="buttons">
+            <input type="submit" value="Place my order"/>
+            <input type="reset" value="Cancel"/>
+         </div>
+         </form>
+<section id = "dates">
+    <div>Date: </div>
+    <div id = "dateNow">11/3/2021<br />2:45:12 p.m. </div>
+    <div>Date last modified: </div>
+    <div id="dateMod">11/3/2021</div>
+    <div id="diffDay">1</div>
+    <div>days since last modified</div>
+</section>
+<footer>
+    <p style="color: white">N&R Bakery &#183; 1000 Frost Street &#183; , NY 12345 &#183; <a href="tel:718-555-5555">(718) 555 - 5555</a> &#183; <a href="mailto:nrbakery@gmail.com">nrbakery@gmail.com</a></p>
+</footer>
+
+</body>
+</html>
